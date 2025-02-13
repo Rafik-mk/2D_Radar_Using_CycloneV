@@ -142,7 +142,8 @@ ACDS_VERSION := 18.1
 ELF := telemeter_system.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := main.c
+C_SRCS += main.c
+C_SRCS += servomoteur.c
 CXX_SRCS :=
 ASM_SRCS :=
 
