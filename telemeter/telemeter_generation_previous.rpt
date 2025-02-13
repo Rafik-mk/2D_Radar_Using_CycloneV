@@ -1,0 +1,103 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Users\mi\Downloads\TP1_CODesign\Project\2D_Radar_Using_CycloneV\telemeter.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=C:\Users\mi\Downloads\TP1_CODesign\Project\2D_Radar_Using_CycloneV\telemeter\simulation --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading 2D_Radar_Using_CycloneV/telemeter.qsys
+Progress: Reading input file
+Progress: Adding HEX0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX0
+Progress: Adding HEX1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX1
+Progress: Adding HEX2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX2
+Progress: Adding HEX3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX3
+Progress: Adding HEX4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX4
+Progress: Adding HEX5 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX5
+Progress: Adding KEY [altera_avalon_pio 18.1]
+Progress: Parameterizing module KEY
+Progress: Adding LEDR [altera_avalon_pio 18.1]
+Progress: Parameterizing module LEDR
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding interval_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module interval_timer
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_qsys [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pll_sys [altera_pll 18.1]
+Progress: Parameterizing module pll_sys
+Progress: Adding sw [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding telemeter_0 [telemeter 1.0]
+Progress: Reading input file
+Progress: Adding HEX0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX0
+Progress: Adding HEX1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX1
+Progress: Adding HEX2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX2
+Progress: Adding HEX3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX3
+Progress: Adding HEX4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX4
+Progress: Adding HEX5 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX5
+Progress: Adding KEY [altera_avalon_pio 18.1]
+Progress: Parameterizing module KEY
+Progress: Adding LEDR [altera_avalon_pio 18.1]
+Progress: Parameterizing module LEDR
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding interval_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module interval_timer
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_qsys [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pll_sys [altera_pll 18.1]
+Progress: Parameterizing module pll_sys
+Progress: Adding sw [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding telemeter_0 [telemeter 1.0]
+Error: Component telemeter can't instantiate a custom component with the same name as itself
+Warning: telemeter_0: Component type telemeter is not in the library
+Progress: Parameterizing module telemeter_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module telemeter_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: telemeter.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: telemeter.pll_sys: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: telemeter.pll_sys: Able to implement PLL with user settings
+Info: telemeter.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: telemeter.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: telemeter.telemeter_0.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: telemeter.telemeter_0.pll_sys: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: telemeter.telemeter_0.pll_sys: Able to implement PLL with user settings
+Info: telemeter.telemeter_0.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: telemeter.telemeter_0.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Error: telemeter.telemeter_0.telemeter_0: Component telemeter 1.0 not found or could not be instantiated
+Error: telemeter.nios2_qsys.data_master/telemeter_0.avalon_slave_0: Missing connection end (try "Remove Dangling Connections")
+Error: telemeter.clk_50.clk/telemeter_0.clock: Missing connection end (try "Remove Dangling Connections")
+Error: telemeter.clk_50.clk_reset/telemeter_0.reset_n: Missing connection end (try "Remove Dangling Connections")
+Error: telemeter.nios2_qsys.debug_reset_request/telemeter_0.reset_n: Missing connection end (try "Remove Dangling Connections")
+Error: telemeter.telemeter_0: telemeter_0.clk must be connected to a clock output
+Warning: telemeter.telemeter_0: telemeter_0.pll_sys_locked must be exported, or connected to a matching conduit.
+Error: telemeter.telemeter_0: telemeter_0.reset must be connected to a reset source
+Info: telemeter: Generating telemeter "telemeter" for SIM_VHDL
+Error: null

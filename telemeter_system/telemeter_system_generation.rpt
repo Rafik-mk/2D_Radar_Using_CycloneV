@@ -1,0 +1,194 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\mi\Downloads\TP1_CODesign\Project\2D_Radar_Using_CycloneV\telemeter_system.qsys --block-symbol-file --output-directory=C:\Users\mi\Downloads\TP1_CODesign\Project\2D_Radar_Using_CycloneV\telemeter_system --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading 2D_Radar_Using_CycloneV/telemeter_system.qsys
+Progress: Reading input file
+Progress: Adding HEX0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX0
+Progress: Adding HEX1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX1
+Progress: Adding HEX2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX2
+Progress: Adding HEX3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX3
+Progress: Adding HEX4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX4
+Progress: Adding HEX5 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX5
+Progress: Adding KEY [altera_avalon_pio 18.1]
+Progress: Parameterizing module KEY
+Progress: Adding LEDR [altera_avalon_pio 18.1]
+Progress: Parameterizing module LEDR
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding interval_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module interval_timer
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_qsys [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pll_sys [altera_pll 18.1]
+Progress: Parameterizing module pll_sys
+Progress: Adding sevenseg_0 [sevenseg 1.0]
+Progress: Parameterizing module sevenseg_0
+Progress: Adding sw [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding telemeter_0 [telemeter 1.0]
+Progress: Parameterizing module telemeter_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: telemeter_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: telemeter_system.pll_sys: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: telemeter_system.pll_sys: Able to implement PLL with user settings
+Info: telemeter_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: telemeter_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\mi\Downloads\TP1_CODesign\Project\2D_Radar_Using_CycloneV\telemeter_system.qsys --synthesis=VHDL --output-directory=C:\Users\mi\Downloads\TP1_CODesign\Project\2D_Radar_Using_CycloneV\telemeter_system\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading 2D_Radar_Using_CycloneV/telemeter_system.qsys
+Progress: Reading input file
+Progress: Adding HEX0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX0
+Progress: Adding HEX1 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX1
+Progress: Adding HEX2 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX2
+Progress: Adding HEX3 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX3
+Progress: Adding HEX4 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX4
+Progress: Adding HEX5 [altera_avalon_pio 18.1]
+Progress: Parameterizing module HEX5
+Progress: Adding KEY [altera_avalon_pio 18.1]
+Progress: Parameterizing module KEY
+Progress: Adding LEDR [altera_avalon_pio 18.1]
+Progress: Parameterizing module LEDR
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding interval_timer [altera_avalon_timer 18.1]
+Progress: Parameterizing module interval_timer
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_qsys [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pll_sys [altera_pll 18.1]
+Progress: Parameterizing module pll_sys
+Progress: Adding sevenseg_0 [sevenseg 1.0]
+Progress: Parameterizing module sevenseg_0
+Progress: Adding sw [altera_avalon_pio 18.1]
+Progress: Parameterizing module sw
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Adding telemeter_0 [telemeter 1.0]
+Progress: Parameterizing module telemeter_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: telemeter_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: telemeter_system.pll_sys: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: telemeter_system.pll_sys: Able to implement PLL with user settings
+Info: telemeter_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: telemeter_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: telemeter_system: Generating telemeter_system "telemeter_system" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src2 and cmd_mux_002.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
+Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux_002.src0 and rsp_mux.sink2
+Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
+Info: interval_timer: Starting RTL generation for module 'telemeter_system_interval_timer'
+Info: interval_timer:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=telemeter_system_interval_timer --dir=C:/Users/mi/AppData/Local/Temp/alt0132_2439142875430022782.dir/0032_interval_timer_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mi/AppData/Local/Temp/alt0132_2439142875430022782.dir/0032_interval_timer_gen//telemeter_system_interval_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: interval_timer: Done RTL generation for module 'telemeter_system_interval_timer'
+Info: interval_timer: "telemeter_system" instantiated altera_avalon_timer "interval_timer"
+Info: jtag_uart: Starting RTL generation for module 'telemeter_system_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=telemeter_system_jtag_uart --dir=C:/Users/mi/AppData/Local/Temp/alt0132_2439142875430022782.dir/0033_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mi/AppData/Local/Temp/alt0132_2439142875430022782.dir/0033_jtag_uart_gen//telemeter_system_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'telemeter_system_jtag_uart'
+Info: jtag_uart: "telemeter_system" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: nios2_qsys: "telemeter_system" instantiated altera_nios2_gen2 "nios2_qsys"
+Info: onchip_memory2: Starting RTL generation for module 'telemeter_system_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=telemeter_system_onchip_memory2 --dir=C:/Users/mi/AppData/Local/Temp/alt0132_2439142875430022782.dir/0034_onchip_memory2_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/mi/AppData/Local/Temp/alt0132_2439142875430022782.dir/0034_onchip_memory2_gen//telemeter_system_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'telemeter_system_onchip_memory2'
+Info: onchip_memory2: "telemeter_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: pll_sys: "telemeter_system" instantiated altera_pll "pll_sys"
+Info: sevenseg_0: "telemeter_system" instantiated sevenseg "sevenseg_0"
+Info: sysid_qsys: "telemeter_system" instantiated altera_avalon_sysid_qsys "sysid_qsys"
+Info: telemeter_0: "telemeter_system" instantiated telemeter "telemeter_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "telemeter_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "telemeter_system" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "telemeter_system" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: rst_controller: "telemeter_system" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'telemeter_system_nios2_qsys_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=telemeter_system_nios2_qsys_cpu --dir=C:/Users/mi/AppData/Local/Temp/alt0132_2439142875430022782.dir/0042_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/mi/AppData/Local/Temp/alt0132_2439142875430022782.dir/0042_cpu_gen//telemeter_system_nios2_qsys_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2025.02.13 14:52:24 (*) Starting Nios II generation
+Info: cpu: # 2025.02.13 14:52:24 (*)   Checking for plaintext license.
+Info: cpu: # 2025.02.13 14:52:24 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2025.02.13 14:52:24 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2025.02.13 14:52:24 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2025.02.13 14:52:24 (*)   Plaintext license not found.
+Info: cpu: # 2025.02.13 14:52:24 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2025.02.13 14:52:25 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2025.02.13 14:52:25 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2025.02.13 14:52:25 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2025.02.13 14:52:25 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2025.02.13 14:52:25 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2025.02.13 14:52:25 (*)   Creating all objects for CPU
+Info: cpu: # 2025.02.13 14:52:25 (*)     Testbench
+Info: cpu: # 2025.02.13 14:52:25 (*)     Instruction decoding
+Info: cpu: # 2025.02.13 14:52:25 (*)       Instruction fields
+Info: cpu: # 2025.02.13 14:52:25 (*)       Instruction decodes
+Info: cpu: # 2025.02.13 14:52:26 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2025.02.13 14:52:26 (*)       Instruction controls
+Info: cpu: # 2025.02.13 14:52:26 (*)     Pipeline frontend
+Info: cpu: # 2025.02.13 14:52:26 (*)     Pipeline backend
+Info: cpu: # 2025.02.13 14:52:28 (*)   Generating RTL from CPU objects
+Info: cpu: # 2025.02.13 14:52:30 (*)   Creating encrypted RTL
+Info: cpu: # 2025.02.13 14:52:31 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'telemeter_system_nios2_qsys_cpu'
+Info: cpu: "nios2_qsys" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_qsys_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: nios2_qsys_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: nios2_qsys_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_qsys_data_master_limiter"
+Info: Reusing file C:/Users/mi/Downloads/TP1_CODesign/Project/2D_Radar_Using_CycloneV/telemeter_system/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_004: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_004"
+Info: Reusing file C:/Users/mi/Downloads/TP1_CODesign/Project/2D_Radar_Using_CycloneV/telemeter_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_004: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_004"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/mi/Downloads/TP1_CODesign/Project/2D_Radar_Using_CycloneV/telemeter_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/mi/Downloads/TP1_CODesign/Project/2D_Radar_Using_CycloneV/telemeter_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/mi/Downloads/TP1_CODesign/Project/2D_Radar_Using_CycloneV/telemeter_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: telemeter_system: Done "telemeter_system" with 36 modules, 64 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

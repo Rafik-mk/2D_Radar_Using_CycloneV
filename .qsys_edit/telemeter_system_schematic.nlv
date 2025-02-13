@@ -1,0 +1,26 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst telemeter_system.telemeter_0 -pg 1 -lvl 3 -y 300
+preplace inst telemeter_system.sevenseg_0 -pg 1 -lvl 2 -y 50
+preplace inst telemeter_system.pll_sys -pg 1 -lvl 2 -y 240
+preplace inst telemeter_system.nios2_qsys -pg 1 -lvl 1 -y 70
+preplace inst telemeter_system.onchip_memory2 -pg 1 -lvl 3 -y 140
+preplace inst telemeter_system.clk_50 -pg 1 -lvl 1 -y 280
+preplace inst telemeter_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst telemeter_system.nios2_qsys.cpu -pg 1
+preplace inst telemeter_system.jtag_uart -pg 1 -lvl 3 -y 40
+preplace inst telemeter_system.nios2_qsys.reset_bridge -pg 1
+preplace inst telemeter_system.nios2_qsys.clock_bridge -pg 1
+preplace inst telemeter_system.sysid_qsys -pg 1 -lvl 3 -y 220
+preplace netloc EXPORT<net_container>telemeter_system</net_container>(SLAVE)telemeter_system.reset,(SLAVE)clk_50.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>telemeter_system</net_container>(SLAVE)telemeter_system.pll_sys_locked,(SLAVE)pll_sys.locked) 1 0 2 NJ 250 NJ
+preplace netloc INTERCONNECT<net_container>telemeter_system</net_container>(SLAVE)onchip_memory2.reset1,(SLAVE)pll_sys.reset,(SLAVE)sevenseg_0.reset,(MASTER)nios2_qsys.debug_reset_request,(SLAVE)nios2_qsys.reset,(SLAVE)sysid_qsys.reset,(MASTER)clk_50.clk_reset,(SLAVE)jtag_uart.reset,(SLAVE)telemeter_0.reset) 1 0 3 150 270 530 330 790
+preplace netloc FAN_OUT<net_container>telemeter_system</net_container>(SLAVE)telemeter_0.clock,(MASTER)clk_50.clk,(SLAVE)sevenseg_0.clock,(SLAVE)pll_sys.refclk) 1 1 2 550 350 NJ
+preplace netloc FAN_OUT<net_container>telemeter_system</net_container>(MASTER)pll_sys.outclk0,(SLAVE)onchip_memory2.clk1,(SLAVE)sysid_qsys.clk,(SLAVE)nios2_qsys.clk,(SLAVE)jtag_uart.clk) 1 0 3 130 30 NJ 40 750
+preplace netloc EXPORT<net_container>telemeter_system</net_container>(SLAVE)telemeter_system.telemeter_0,(SLAVE)telemeter_0.conduit_end) 1 0 3 NJ 370 NJ 370 NJ
+preplace netloc EXPORT<net_container>telemeter_system</net_container>(SLAVE)telemeter_system.sevenseg_0,(SLAVE)sevenseg_0.seven_seg) 1 0 2 NJ 230 NJ
+preplace netloc POINT_TO_POINT<net_container>telemeter_system</net_container>(MASTER)nios2_qsys.irq,(SLAVE)jtag_uart.irq) 1 1 2 NJ 160 730
+preplace netloc INTERCONNECT<net_container>telemeter_system</net_container>(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)nios2_qsys.debug_mem_slave,(SLAVE)sevenseg_0.avalon_slave_0,(SLAVE)telemeter_0.avalon_slave_0,(SLAVE)onchip_memory2.s1,(MASTER)nios2_qsys.data_master,(MASTER)nios2_qsys.instruction_master,(SLAVE)sysid_qsys.control_slave) 1 0 3 130 210 510 200 770
+preplace netloc EXPORT<net_container>telemeter_system</net_container>(SLAVE)clk_50.clk_in,(SLAVE)telemeter_system.clk) 1 0 1 NJ
+levelinfo -pg 1 0 100 1020
+levelinfo -hier telemeter_system 110 270 600 870 1010
