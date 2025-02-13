@@ -1,0 +1,49 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity servo_motor_tb is
+end servo_motor_tb;
+
+architecture testbench of servo_motor_tb is
+    signal clk       : std_logic := '0';
+    signal reset_n   : std_logic := '1';
+    signal position  : std_logic_vector(7 downto 0) := (others => '0');
+    signal commande  : std_logic;
+
+    constant clk_period : time := 20 ns; -- 50MHz
+
+begin
+    uut: entity work.servo_motor
+        port map (
+            clk       => clk,
+            reset_n   => reset_n,
+            position  => position,
+            commande  => commande
+        );
+
+    process
+    begin
+        wait for clk_period / 2;
+        clk <= not clk;
+    end process;
+
+    process
+    begin
+        reset_n <= '0';
+        wait for 100 ns;
+        reset_n <= '1';
+
+        position <= "01000000"; -- Test position à 90°
+        wait for 40 ms;
+
+        position <= "10000000"; -- Test position à 180°
+        wait for 40 ms;
+
+        position <= "00000000"; -- Test position à 0°
+        wait for 40 ms;
+
+        wait;
+    end process;
+end testbench;
